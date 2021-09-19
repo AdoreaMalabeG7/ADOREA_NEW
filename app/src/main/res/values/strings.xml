@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">HELPING_HANDS</string>
+    <string name="app_name">FirstProject</string>
+    <string name="bloodDonation">Number of donaters we have right now</string>
+    <string name="BloodDonation">Blood group</string>
+    <string name="BloodDonationnum">"number of donas we have "</string>
+    <string name="BDCnum">Contact us on 0 112 369 931</string>
+    <string name="BDadd">National blood transfursion services ,
+        Narahenpita,Elvitigala mavath,
+        Colombo</string>
+    <string name="hospitalDsc">these labs and hospitals are connected with us.</string>
+    <string name="hospitalDis2">You can donate your blood on this locations.</string>
+    <string name="hospitalDis3">You can donate your blood on this locations.</string>
+    <string name="DisB4">Request</string>
+    <string name="DisB3">blood bank</string>
+    <string name="DisB2">Labs and hospitals</string>
+    <string name="DisB1">blood donation</string>
+    <string name="rg">Register</string>
+    <string name="rgL1">Full name:-</string>
+    <string name="rgL2">Date of birth:-</string>
+    <string name="rgL3">Female</string>
+    <string name="rgL4">Male</string>
+    <string name="rgL5">Weight :-</string>
+    <string name="rgL6">Address :-</string>
+    <string name="rgL7">Last donate date :-</string>
+    <string name="rgL8">Phone</string>
+    <string name="pf">ME</string>
+    <string name="pfL1">Full name:-</string>
+    <string name="pfL2">Date of birth:-</string>
+    <string name="pfL3">Female</string>
+    <string name="pfL4">Male</string>
+    <string name="pfL5">Weight :-</string>
+    <string name="pfL6">Address :-</string>
+    <string name="pfL7">Last donate date :-</string>
+    <string name="pfL8">Phone</string>
 </resources>

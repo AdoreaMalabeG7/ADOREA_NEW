@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.helping_hands">
+    package="com.example.firstproject">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Helping hands"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HELPING_HANDS">
+
+        <activity android:name=".profile"></activity>
+        <activity
+            android:name=".bloodbank"
+            android:label="Blood bank"></activity>
+        <activity
+            android:name=".requests"
+            android:label="Requests"></activity>
+        <activity
+            android:name=".hospitals"
+            android:label="Labs and hospitals"></activity>
+        <activity
+            android:name=".MainActivity2"
+            android:label="Blood donation" />
         <activity android:name=".MainActivity">
+            android:label="Helping hands"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

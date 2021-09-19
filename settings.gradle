@@ -1,2 +1,5 @@
 rootProject.name = "HELPING_HANDS"
 include ':app'
+include ':mylibrary'
+
+

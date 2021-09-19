@@ -1,7 +1,7 @@
-package com.example.helping_hands.;
+package com.example.HELPING_HANDS.;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.R;
 import android.os.Bundle;
 
 public class hospitals extends AppCompatActivity {

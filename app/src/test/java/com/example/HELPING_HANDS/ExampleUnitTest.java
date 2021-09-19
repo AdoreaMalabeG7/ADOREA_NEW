@@ -1,4 +1,4 @@
-package com.example.helping_hands;
+package com.example.HELPING_HANDS;
 
 import org.junit.Test;
 

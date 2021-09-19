@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdf6"
+    tools:context=".MainDisplybd">
+
+    <Button
+        android:id="@+id/BD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/DisB1"
+        android:textSize="20sp"
+        app:backgroundTint="#5d5d5a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:text="@string/DisB3"
+        android:textSize="20sp"
+        app:backgroundTint="#5d5d5a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="blood bank" />
+
+    <Button
+        android:id="@+id/LH"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="@string/DisB2"
+        android:textSize="20sp"
+        app:backgroundTint="#5d5d5a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Labs and hospitals" />
+
+    <Button
+        android:id="@+id/RQ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:text="@string/DisB4"
+        android:textSize="20sp"
+        app:backgroundTint="#5d5d5a"
+        app:iconTint="#050303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Request" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="271dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RQ"
+        app:layout_constraintVertical_bias="0.505"
+        app:srcCompat="@drawable/bs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

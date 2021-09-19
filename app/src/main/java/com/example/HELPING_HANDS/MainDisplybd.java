@@ -1,4 +1,4 @@
-package com.example.helping_hands;
+package com.example.HELPING_HANDS;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,14 +8,14 @@ import android.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainDisplybd extends AppCompatActivity {
 
 Button bld,lnh,rqs,blb;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_mainDisplaydb);
 
         bld=findViewById(R.id.BD);
 
@@ -23,7 +23,7 @@ Button bld,lnh,rqs,blb;
 
             @Override
             public void onClick(View v) {
-                Intent tsk = new Intent(MainActivity.this,profile.class);
+                Intent tsk = new Intent(MainDisplybd.this,profile.class);
                 startActivity(tsk);
             }
         });
@@ -32,7 +32,7 @@ Button bld,lnh,rqs,blb;
         lnh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk2 = new Intent(MainActivity.this,hospitals.class);
+                Intent tsk2 = new Intent(MainDisplybd.this,hospitals.class);
                 startActivity(tsk2);
             }
         });
@@ -41,7 +41,7 @@ Button bld,lnh,rqs,blb;
         rqs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk3 = new Intent(MainActivity.this,requests.class);
+                Intent tsk3 = new Intent(MainDisplybd.this,requests.class);
                 startActivity(tsk3);
             }
         });
@@ -50,7 +50,7 @@ Button bld,lnh,rqs,blb;
         blb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk3 = new Intent(MainActivity.this,bloodbank.class);
+                Intent tsk3 = new Intent(MainDisplybd.this,bloodbank.class);
                 startActivity(tsk3);
             }
         });

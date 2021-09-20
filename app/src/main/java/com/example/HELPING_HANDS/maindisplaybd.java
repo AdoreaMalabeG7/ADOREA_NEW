@@ -8,7 +8,7 @@ import android.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainDisplybd extends AppCompatActivity {
+public class maindisplaybd extends AppCompatActivity {
 
 Button bld,lnh,rqs,blb;
     @Override
@@ -23,7 +23,7 @@ Button bld,lnh,rqs,blb;
 
             @Override
             public void onClick(View v) {
-                Intent tsk = new Intent(MainDisplybd.this,profile.class);
+                Intent tsk = new Intent(maindisplaybd.this,profile.class);
                 startActivity(tsk);
             }
         });
@@ -32,7 +32,7 @@ Button bld,lnh,rqs,blb;
         lnh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk2 = new Intent(MainDisplybd.this,hospitals.class);
+                Intent tsk2 = new Intent(maindisplaybd.this,hospitals.class);
                 startActivity(tsk2);
             }
         });
@@ -41,7 +41,7 @@ Button bld,lnh,rqs,blb;
         rqs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk3 = new Intent(MainDisplybd.this,requests.class);
+                Intent tsk3 = new Intent(maindisplaybd.this,requests.class);
                 startActivity(tsk3);
             }
         });
@@ -50,7 +50,7 @@ Button bld,lnh,rqs,blb;
         blb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk3 = new Intent(MainDisplybd.this,bloodbank.class);
+                Intent tsk3 = new Intent(maindisplaybd.this,bloodbank.class);
                 startActivity(tsk3);
             }
         });

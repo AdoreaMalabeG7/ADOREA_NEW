@@ -22,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.144"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -62,7 +63,7 @@
         android:layout_height="80dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="contact  number"
+        android:text="Contact  number"
         android:textColor="#5d5d5a"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

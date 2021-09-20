@@ -1,4 +1,4 @@
-package com.example.HELPING_HANDS.;
+package com.example.HELPING_HANDS;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.R;

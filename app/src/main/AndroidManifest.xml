@@ -9,17 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HELPING_HANDS">
-
-        <activity android:name=".profile"></activity>
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".Users"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Preview"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".EditDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Chat"
+            android:exported="true" />
+        <activity
+            android:name=".Certificate"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity android:name=".profile" />
         <activity
             android:name=".bloodbank"
-            android:label="Blood bank"></activity>
+            android:label="Blood bank" />
         <activity
             android:name=".requests"
-            android:label="Requests"></activity>
+            android:label="Requests" />
         <activity
             android:name=".hospitals"
-            android:label="Labs and hospitals"></activity>
+            android:label="Labs and hospitals" />
         <activity
             android:name=".Registerbd"
             android:label="Blood donation" />

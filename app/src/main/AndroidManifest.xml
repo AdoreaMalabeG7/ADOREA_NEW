@@ -34,7 +34,7 @@
             android:name=".Certificate"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".maindisplaybd"
             android:exported="true" />
         <activity android:name=".profilebd" />
         <activity

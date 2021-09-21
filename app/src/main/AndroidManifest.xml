@@ -36,15 +36,15 @@
         <activity
             android:name=".MainActivity2"
             android:exported="true" />
-        <activity android:name=".profile" />
+        <activity android:name=".profilebd" />
         <activity
             android:name=".bloodbank"
             android:label="Blood bank" />
         <activity
-            android:name=".requests"
+            android:name=".requestsbd"
             android:label="Requests" />
         <activity
-            android:name=".hospitals"
+            android:name=".hospitalsbd"
             android:label="Labs and hospitals" />
         <activity
             android:name=".Registerbd"

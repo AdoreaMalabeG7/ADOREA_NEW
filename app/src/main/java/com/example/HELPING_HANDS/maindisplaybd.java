@@ -1,12 +1,12 @@
 package com.example.HELPING_HANDS;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.R;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 public class maindisplaybd extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ Button bld,lnh,rqs,blb;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainDisplaydb);
+        setContentView(R.layout.activity_maindisplaybd);
 
         bld=findViewById(R.id.BD);
 
@@ -23,7 +23,7 @@ Button bld,lnh,rqs,blb;
 
             @Override
             public void onClick(View v) {
-                Intent tsk = new Intent(maindisplaybd.this,profile.class);
+                Intent tsk = new Intent(maindisplaybd.this, profilebd.class);
                 startActivity(tsk);
             }
         });
@@ -32,7 +32,7 @@ Button bld,lnh,rqs,blb;
         lnh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk2 = new Intent(maindisplaybd.this,hospitals.class);
+                Intent tsk2 = new Intent(maindisplaybd.this, hospitalsbd.class);
                 startActivity(tsk2);
             }
         });
@@ -41,7 +41,7 @@ Button bld,lnh,rqs,blb;
         rqs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tsk3 = new Intent(maindisplaybd.this,requests.class);
+                Intent tsk3 = new Intent(maindisplaybd.this, requestsbd.class);
                 startActivity(tsk3);
             }
         });

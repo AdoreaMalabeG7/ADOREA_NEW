@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.HELPING_HANDS">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -37,34 +34,34 @@
             android:name=".Certificate"
             android:exported="true" />
         <activity
-            android:name=".maindisplaybd"
+            android:name=".profilebd"
             android:exported="true" />
-        <activity android:name=".profilebd" />
-
         <activity
             android:name=".bloodbank"
-            android:label="Blood bank" />
+            android:label="Blood bank"
+            android:exported="true" />
         <activity
             android:name=".requestsbd"
-            android:label="Requests" />
+            android:label="Requests"
+            android:exported="true" />
         <activity
             android:name=".hospitalsbd"
-            android:label="Labs and hospitals" />
+            android:label="Labs and hospitals"
+            android:exported="true"/>
         <activity
             android:name=".Registerbd"
-            android:label="Blood donation" />
-        <activity android:name=".MainActivity"
-            android:label="Helping hands"
+            android:label="Blood donation"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
-
+            android:label="Helping hands"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

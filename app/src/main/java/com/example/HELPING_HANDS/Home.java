@@ -18,6 +18,9 @@ public class Home extends AppCompatActivity {
         ImageButton btnImg1 = (ImageButton) findViewById(R.id.imageButton6);
         ImageButton btnImg2 = (ImageButton) findViewById(R.id.imageButton7);
 
+        Button btn1 = (Button) findViewById(R.id.button12);
+        Button btn2 = (Button) findViewById(R.id.button13);
+
         btnImg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,6 +29,20 @@ public class Home extends AppCompatActivity {
         });
 
         btnImg2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openChat();
+            }
+        });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUsers();
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openChat();

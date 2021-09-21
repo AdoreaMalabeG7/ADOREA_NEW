@@ -99,10 +99,10 @@
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintHorizontal_bias="0.109"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button11"
-            app:layout_constraintVertical_bias="0.565"
+            app:layout_constraintVertical_bias="0.371"
             app:srcCompat="@drawable/profile" />
 
         <ImageButton
@@ -112,39 +112,39 @@
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.836"
+            app:layout_constraintHorizontal_bias="0.848"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button11"
-            app:layout_constraintVertical_bias="0.508"
+            app:layout_constraintVertical_bias="0.371"
             app:srcCompat="@drawable/chat" />
 
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="54dp"
-            android:layout_height="22dp"
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/pusers"
-            android:textColor="#055C08"
+            android:textColor="#D3BBBB"
+            app:backgroundTint="#041B05"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView33"
-            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintEnd_toStartOf="@+id/button13"
+            app:layout_constraintHorizontal_bias="0.194"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-            app:layout_constraintVertical_bias="0.094" />
+            app:layout_constraintVertical_bias="0.177" />
 
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="139dp"
-            android:layout_height="42dp"
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="158dp"
+            android:layout_height="96dp"
             android:text="@string/pchat"
-            android:textColor="#055C08"
-            android:textSize="14sp"
-            android:textStyle="bold"
+            android:textColor="#D3BBBB"
+            app:backgroundTint="#041B05"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.938"
+            app:layout_constraintHorizontal_bias="0.936"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintVertical_bias="0.846" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

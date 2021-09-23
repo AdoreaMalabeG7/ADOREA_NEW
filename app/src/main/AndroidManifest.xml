@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.HELPING_HANDS">
 
     <application
@@ -9,8 +8,9 @@
         android:label="Helping hands"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HELPING_HANDS"
-        android:fullBackupContent="true">
+        android:theme="@style/Theme.HELPING_HANDS">
+        <activity android:name=".registeredHomes"></activity>
+        <activity android:name=".Activity_establishment" />
         <activity
             android:name=".Home"
             android:exported="true" />
@@ -40,26 +40,24 @@
             android:exported="true" />
         <activity
             android:name=".bloodbank"
-            android:label="Blood bank"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Blood bank" />
         <activity
             android:name=".requestsbd"
-            android:label="Requests"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Requests" />
         <activity
             android:name=".hospitalsbd"
-            android:label="Labs and hospitals"
-            android:exported="true"/>
+            android:exported="true"
+            android:label="Labs and hospitals" />
         <activity
             android:name=".Registerbd"
-            android:label="Blood donation"
-            android:exported="true"/>
-
+            android:exported="true"
+            android:label="Blood donation" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            tools:ignore="ExtraText"
-            android:label="Helping hands">
+            android:exported="true">
+            android:label="Helping hands"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

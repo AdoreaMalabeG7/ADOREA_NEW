@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "549142670990",
+    "firebase_url": "https://helping-hands-e5cfa-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "helping-hands-e5cfa",
+    "storage_bucket": "helping-hands-e5cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549142670990:android:cde5cfe96b41c48c4ae3df",
+        "android_client_info": {
+          "package_name": "com.example.helping_hands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549142670990-geoba416adedgev3v08h55hsd3orav2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIh61Ti9IQLSnzoX4GOE-96yDsdQiez60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549142670990-geoba416adedgev3v08h55hsd3orav2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

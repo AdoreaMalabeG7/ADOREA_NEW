@@ -65,7 +65,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
             app:layout_constraintStart_toStartOf="@+id/textView29"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintTop_toBottomOf="@+id/WigtT"
             app:layout_constraintVertical_bias="0.038" />
 
         <TextView
@@ -97,7 +97,7 @@
             android:textColor="#290F0F"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+            app:layout_constraintBottom_toTopOf="@+id/WigtT"
             app:layout_constraintStart_toStartOf="@+id/textView17"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
             app:layout_constraintVertical_bias="0.0" />
@@ -112,7 +112,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/prcode"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+            app:layout_constraintEnd_toEndOf="@+id/WigtT"
             app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
         <EditText
@@ -129,7 +129,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/WigtT"
             android:layout_width="254dp"
             android:layout_height="46dp"
             android:layout_marginTop="16dp"

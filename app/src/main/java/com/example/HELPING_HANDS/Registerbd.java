@@ -28,7 +28,7 @@ public class Registerbd extends AppCompatActivity {
         setContentView(R.layout.activity_registerbd);
 
         bdFullname = findViewById(R.id.nameT);
-        bdBirth = findViewById(R.id.WigtT);
+        bdBirth = findViewById(R.id.BdayT);
         bdG1 = findViewById(R.id.GndM);
         bdG2 = findViewById(R.id.GndF);
         bdWigth = findViewById(R.id.WigtT);
@@ -54,8 +54,8 @@ public class Registerbd extends AppCompatActivity {
             reference=rootnode.getReference("Register");
 
 //                bdHelperDB helperClass=new bdHelperDB(name,Bday,weight,adress,ldd,phone);
-//            reference.child(phone).setValue(bdHelperDB);
-//
+//            reference.child(phone).setValue(helperClass);
+
             }
         });
 
@@ -67,6 +67,8 @@ public class Registerbd extends AppCompatActivity {
             public void onClick(View v) {
                 Intent tskend = new Intent(Registerbd.this, hospitalsbd.class);
                 startActivity(tskend);
+
+
             }
         });
     }

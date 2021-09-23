@@ -43,16 +43,16 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/WigtT"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/name"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
+        app:layout_constraintVertical_bias="0.541" />
 
     <TextView
         android:id="@+id/Bday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="180dp"
         android:text="@string/rgL2"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
@@ -93,13 +93,13 @@
         android:id="@+id/GndF"
         android:layout_width="121dp"
         android:layout_height="44dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="224dp"
         android:text="@string/rgL3"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -213,7 +213,7 @@
         android:id="@+id/BdayT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="168dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"

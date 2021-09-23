@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HELPING_HANDS"
-        android:fullBackupContent="">
+        android:fullBackupContent="true">
         <activity
             android:name=".Home"
             android:exported="true" />
@@ -53,15 +53,8 @@
         <activity
             android:name=".Registerbd"
             android:label="Blood donation"
-            android:exported="true">
-<!--        <intent-filter>-->
-<!--            <action android:name="android.intent.action.MAIN" />-->
+            android:exported="true"/>
 
-<!--            <category android:name="android.intent.category.LAUNCHER" />-->
-<!--        </intent-filter>-->
-
-
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"

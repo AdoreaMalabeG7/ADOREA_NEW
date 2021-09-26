@@ -50,8 +50,8 @@ public class Registerbd extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot DataSnapshot) {
                 id=( DataSnapshot.getChildrenCount());
-            }
 
+            }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

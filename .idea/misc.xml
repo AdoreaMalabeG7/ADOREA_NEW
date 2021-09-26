@@ -7,33 +7,40 @@
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_bloodbank.xml" value="0.2" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_certificate.xml" value="0.1721014492753623" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_chat.xml" value="0.23731884057971014" />
-        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_edit_details.xml" value="0.1" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_dhana.xml" value="0.146875" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_edit_details.xml" value="0.16" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_establishment.xml" value="0.19765625" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_establishment_welcome.xml" value="0.146875" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_home_registration.xml" value="0.146875" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_hospitalsbd.xml" value="0.264" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_item.xml" value="0.1" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_maindisplaybd.xml" value="0.2" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_meal_type.xml" value="0.1" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_preview.xml" value="0.264" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_profilebd.xml" value="0.25" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_registerbd.xml" value="0.2" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_registered_homes.xml" value="0.1" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_requestsbd.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_users.xml" value="0.23731884057971014" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/activity_users_list.xml" value="0.1" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/dhana_item.xml" value="0.1" />
+        <entry key="..\:/Users/Shashishka/AndroidStudioProjects/ADOREA_NEW/app/src/main/res/layout/show_ddetail.xml" value="0.1" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_bloodbank.xml" value="0.1743659420289855" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_certificate.xml" value="0.11503623188405797" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_chat.xml" value="0.11548913043478261" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_edit_details.xml" value="0.11548913043478261" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_home.xml" value="0.11548913043478261" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_hospitals.xml" value="0.1743659420289855" />
-        <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_item.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_login.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_main.xml" value="0.11503623188405797" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_preview.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_requests.xml" value="0.1743659420289855" />
         <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_sign_up.xml" value="0.11548913043478261" />
-        <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_users.xml" value="0.25" />
-        <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_users_list.xml" value="0.12" />
-        <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/userslist.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/pam/Documents/GitHub/ADOREA_NEW/app/src/main/res/layout/activity_users.xml" value="0.11548913043478261" />
       </map>
     </option>
   </component>

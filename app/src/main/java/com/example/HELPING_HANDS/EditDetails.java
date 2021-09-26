@@ -33,9 +33,9 @@ public class EditDetails extends AppCompatActivity {
         btnUpdate = (Button) findViewById(R.id.button7);
 
         tname = (EditText) findViewById(R.id.ename);
-        temail = (EditText) findViewById(R.id.editTextTextPersonName9);
-        tpnum = (EditText) findViewById(R.id.editTextTextPersonName10);
-        tuname = (EditText) findViewById(R.id.editTextTextPersonName11);
+        temail = (EditText) findViewById(R.id.em);
+        tpnum = (EditText) findViewById(R.id.ph);
+        tuname = (EditText) findViewById(R.id.unm);
         tpwd = (EditText) findViewById(R.id.editTextTextPersonName12);
 
         ref = FirebaseDatabase.getInstance().getReference().child("UserDtl").child("U5");

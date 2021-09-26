@@ -9,17 +9,18 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Home extends AppCompatActivity {
-
+    Button btn1, btn2;
+    ImageButton btnImg1, btnImg2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ImageButton btnImg1 = (ImageButton) findViewById(R.id.imageButton6);
-        ImageButton btnImg2 = (ImageButton) findViewById(R.id.imageButton7);
+        btnImg1 = (ImageButton) findViewById(R.id.imageButton6);
+        btnImg2 = (ImageButton) findViewById(R.id.imageButton7);
 
-        Button btn1 = (Button) findViewById(R.id.button12);
-        Button btn2 = (Button) findViewById(R.id.button13);
+        btn1 = (Button) findViewById(R.id.button12);
+        btn2 = (Button) findViewById(R.id.button13);
 
         btnImg1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +52,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void openUsers(){
-        Intent intent = new Intent(this, Users.class);
+        Intent intent = new Intent(this, MyAdapter.class);
         startActivity(intent);
     }
 

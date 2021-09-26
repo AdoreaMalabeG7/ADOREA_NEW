@@ -70,9 +70,18 @@
     <string name="pfL6">Address :-</string>
     <string name="pfL7">Last donate date :-</string>
     <string name="pfL8">Phone</string>
+<<<<<<< Updated upstream
     <string name="rq">Name</string>/>
     <string-array name="homeType">
         <item>Elder Care Home</item>
         <item>Child Care Home</item>
     </string-array>
+=======
+    <string name="rq">Name</string>
+    <string name="ppname" />
+    <string name="ppemail">" "</string>
+    <string name="ppnum" />
+    <string name="ppuname" />
+    <string name="ppwd" />/>
+>>>>>>> Stashed changes
 </resources>

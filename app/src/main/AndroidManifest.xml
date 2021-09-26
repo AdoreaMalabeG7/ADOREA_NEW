@@ -13,7 +13,9 @@
         android:fullBackupContent="true">
         <activity
             android:name=".Home"
-            android:exported="true" />
+            android:exported="true"/>
+
+
         <activity
             android:name=".Users"
             android:exported="true" />
@@ -23,6 +25,8 @@
         <activity
             android:name=".Preview"
             android:exported="true" />
+
+
         <activity
             android:name=".Login"
             android:exported="true" />
@@ -37,7 +41,11 @@
             android:exported="true" />
         <activity
             android:name=".profilebd"
-            android:exported="true" />
+            android:label="Donater profile"
+            android:exported="true"/>
+
+
+
         <activity
             android:name=".bloodbank"
             android:label="Blood bank"
@@ -46,6 +54,20 @@
             android:name=".requestsbd"
             android:label="Requests"
             android:exported="true" />
+
+        <activity
+            android:name=".maindisplaybd"
+            android:label="Blood Donation"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
         <activity
             android:name=".hospitalsbd"
             android:label="Labs and hospitals"
@@ -55,16 +77,17 @@
             android:label="Blood donation"
             android:exported="true"/>
 
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             tools:ignore="ExtraText"
             android:label="Helping hands">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

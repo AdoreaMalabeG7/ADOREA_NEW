@@ -9,218 +9,250 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="registration"
+        android:layout_width="259dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:text="Registration"
+        android:textAlignment="center"
         android:textColor="#5d5d5a"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Registration"
+        android:gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="@string/rgL1"
+        android:layout_marginTop="44dp"
+        android:text="Full name:-"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp" />
 
     <EditText
         android:id="@+id/nameT"
-        android:layout_width="233dp"
-        android:layout_height="47dp"
+        android:layout_width="234dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/WigtT"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/Bday"
+        android:id="@+id/dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:text="@string/rgL2"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Date of birth:-"
+        android:inputType="date"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <EditText
-        android:id="@+id/WigtT"
-        android:layout_width="239dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="276dp"
+        android:id="@+id/BdayTt"
+        android:layout_width="222dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="#5d5d5a"
+        android:inputType="date"
+        android:textColor="#CA7C7C"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
-        app:layout_constraintStart_toEndOf="@+id/Wigt"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/dob"
+        app:layout_constraintTop_toBottomOf="@+id/nameT" />
 
     <CheckBox
-        android:id="@+id/GndM"
+        android:id="@+id/Gndf"
         android:layout_width="123dp"
         android:layout_height="44dp"
-        android:layout_marginTop="224dp"
-        android:text="@string/rgL4"
+        android:layout_marginTop="16dp"
+        android:text="Male"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/GndF"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintEnd_toStartOf="@+id/Gnd"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
 
     <CheckBox
-        android:id="@+id/GndF"
+        android:id="@+id/Gnd"
         android:layout_width="121dp"
         android:layout_height="44dp"
-        android:layout_marginTop="224dp"
-        android:text="@string/rgL3"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Female"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/BdayTt" />
 
     <TextView
-        android:id="@+id/Wigt"
-        android:layout_width="105dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="276dp"
-        android:text="@string/rgL5"
+        android:id="@+id/Weight"
+        android:layout_width="106dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Weight :-"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintEnd_toStartOf="@+id/bdgt"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Gndf" />
 
     <EditText
-        android:id="@+id/addrsT"
-        android:layout_width="267dp"
-        android:layout_height="38dp"
+        android:id="@+id/ads"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintHorizontal_bias="0.724"
         app:layout_constraintStart_toEndOf="@+id/addrs"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintTop_toBottomOf="@+id/bdgt" />
 
     <TextView
         android:id="@+id/addrs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="336dp"
-        android:text="@string/rgL6"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Address :-"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Weight" />
+
+    <EditText
+        android:id="@+id/weightTt"
+        android:layout_width="69dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number|text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Weight"
+        app:layout_constraintTop_toBottomOf="@+id/Gndf" />
 
     <TextView
         android:id="@+id/LDD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:inputType="number"
         android:text="Last donate date :-"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/addrs" />
 
     <EditText
-        android:id="@+id/LddT"
-        android:layout_width="162dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="392dp"
+        android:id="@+id/LddTt"
+        android:layout_width="181dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toEndOf="@+id/LDD"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/ads" />
 
     <TextView
         android:id="@+id/PHN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
         android:text="Phone :-"
         android:textColor="#5d5d5a"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/LDD" />
+
 
     <Button
         android:id="@+id/rg"
-        android:layout_width="177dp"
-        android:layout_height="79dp"
-        android:text="@string/rg"
+        android:layout_width="184dp"
+        android:layout_height="58dp"
+        android:text="Register"
         android:textSize="24sp"
         app:backgroundTint="#5d5d5a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintTop_toBottomOf="@+id/PHN"
+        app:layout_constraintVertical_bias="0.251" />
 
     <EditText
-        android:id="@+id/PhnT"
-        android:layout_width="260dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="460dp"
+        android:id="@+id/PhnTt"
+        android:layout_width="259dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
-        android:inputType="phone"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.698"
         app:layout_constraintStart_toEndOf="@+id/PHN"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/LddTt" />
+
+    <TextView
+        android:id="@+id/bdgt"
+        android:layout_width="129dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:text="Blood group:-"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gnd" />
 
     <EditText
-        android:id="@+id/BdayT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:id="@+id/bgrTt"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/Bday"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/bdgt"
+        app:layout_constraintTop_toBottomOf="@+id/Gnd" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

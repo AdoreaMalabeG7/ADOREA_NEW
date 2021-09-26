@@ -11,7 +11,7 @@
         android:id="@+id/BD"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="52dp"
         android:text="@string/DisB1"
         android:textSize="20sp"
         app:backgroundTint="#5d5d5a"
@@ -24,35 +24,35 @@
         android:id="@+id/BB"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="24dp"
         android:text="@string/DisB3"
         android:textSize="20sp"
         app:backgroundTint="#5d5d5a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LH"
         tools:text="blood bank" />
 
     <Button
         android:id="@+id/LH"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="24dp"
         android:text="@string/DisB2"
         android:textSize="20sp"
         app:backgroundTint="#5d5d5a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BD"
         tools:text="Labs and hospitals" />
 
     <Button
         android:id="@+id/RQ"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="356dp"
+        android:layout_marginTop="24dp"
         android:text="@string/DisB4"
         android:textSize="20sp"
         app:backgroundTint="#5d5d5a"
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BB"
         tools:text="Request" />
 
     <ImageView
@@ -70,8 +70,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RQ"
+        app:layout_constraintTop_toBottomOf="@+id/bdprof"
         app:layout_constraintVertical_bias="0.505"
         app:srcCompat="@drawable/bs" />
+
+    <Button
+        android:id="@+id/bdprof"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="profile"
+        android:textSize="20sp"
+        app:backgroundTint="#5d5d5a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RQ" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,14 +26,14 @@
             android:textColor="#290F0F"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintBottom_toTopOf="@+id/bdgt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/bdgt"
             android:layout_width="352dp"
             android:layout_height="58dp"
             android:layout_marginStart="4dp"
@@ -45,7 +45,7 @@
             android:textColor="#290F0F"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/nameT"
             app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
             app:layout_constraintVertical_bias="0.0" />
@@ -63,9 +63,9 @@
             android:textColor="#290F0F"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+            app:layout_constraintBottom_toTopOf="@+id/weightTt"
             app:layout_constraintStart_toStartOf="@+id/textView29"
-            app:layout_constraintTop_toBottomOf="@+id/WigtT"
+            app:layout_constraintTop_toBottomOf="@+id/BdayTt"
             app:layout_constraintVertical_bias="0.038" />
 
         <TextView
@@ -81,7 +81,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView30"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+            app:layout_constraintTop_toBottomOf="@+id/weightTt"
             app:layout_constraintVertical_bias="0.304" />
 
         <TextView
@@ -97,13 +97,13 @@
             android:textColor="#290F0F"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/WigtT"
-            app:layout_constraintStart_toStartOf="@+id/textView17"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/BdayTt"
+            app:layout_constraintStart_toStartOf="@+id/bdgt"
+            app:layout_constraintTop_toBottomOf="@+id/nameT"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/nameT"
             android:layout_width="268dp"
             android:layout_height="52dp"
             android:layout_marginTop="4dp"
@@ -112,11 +112,11 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/prcode"
-            app:layout_constraintEnd_toEndOf="@+id/WigtT"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            app:layout_constraintEnd_toEndOf="@+id/BdayTt"
+            app:layout_constraintTop_toBottomOf="@+id/bdgt" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/weightTt"
             android:layout_width="251dp"
             android:layout_height="51dp"
             android:layout_marginTop="20dp"
@@ -125,11 +125,11 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/pidnum1"
-            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="@+id/conf"
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
         <EditText
-            android:id="@+id/WigtT"
+            android:id="@+id/BdayTt"
             android:layout_width="254dp"
             android:layout_height="46dp"
             android:layout_marginTop="16dp"
@@ -138,11 +138,11 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/pn1"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+            app:layout_constraintEnd_toEndOf="@+id/weightTt"
             app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/conf"
             android:layout_width="215dp"
             android:layout_height="78dp"
             android:layout_marginTop="60dp"

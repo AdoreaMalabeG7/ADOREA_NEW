@@ -14,7 +14,7 @@ public class Chat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
-        Button button = (Button) findViewById(R.id.button);
+        Button button = (Button) findViewById(R.id.conf);
 
         button.setOnClickListener(new View.OnClickListener(){
             @Override

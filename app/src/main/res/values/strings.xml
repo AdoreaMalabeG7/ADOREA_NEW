@@ -52,7 +52,7 @@
     <string name="DisB3">blood bank</string>
     <string name="DisB2">Labs and hospitals</string>
     <string name="DisB1">blood donation</string>
-    <string name="rg">Register</string>
+    <string name="rg">Register for blood donation</string>
     <string name="rgL1">Full name:-</string>
     <string name="rgL2">Date of birth:-</string>
     <string name="rgL3">Female</string>
@@ -70,5 +70,6 @@
     <string name="pfL6">Address :-</string>
     <string name="pfL7">Last donate date :-</string>
     <string name="pfL8">Phone</string>
-    <string name="rq">Name</string>/>
+    <string name="rq">Name</string>
+    <string name="full_name">Full name:-</string>/>
 </resources>

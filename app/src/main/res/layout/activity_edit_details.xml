@@ -56,7 +56,7 @@
             app:layout_constraintTop_toBottomOf="@+id/ename" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
+            android:id="@+id/em"
             android:layout_width="280dp"
             android:layout_height="59dp"
             android:ems="10"
@@ -81,10 +81,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+            app:layout_constraintTop_toBottomOf="@+id/em" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName10"
+            android:id="@+id/ph"
             android:layout_width="280dp"
             android:layout_height="59dp"
             android:ems="10"
@@ -109,10 +109,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+            app:layout_constraintTop_toBottomOf="@+id/ph" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName11"
+            android:id="@+id/unm"
             android:layout_width="280dp"
             android:layout_height="59dp"
             android:ems="10"
@@ -126,7 +126,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/pwd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -137,7 +137,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+            app:layout_constraintTop_toBottomOf="@+id/unm" />
 
         <EditText
             android:id="@+id/editTextTextPersonName12"
@@ -151,7 +151,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+            app:layout_constraintTop_toBottomOf="@+id/pwd" />
 
         <Button
             android:id="@+id/button7"

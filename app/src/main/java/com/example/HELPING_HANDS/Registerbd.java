@@ -1,75 +1,98 @@
 package com.example.HELPING_HANDS;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class Registerbd extends AppCompatActivity {
-    EditText bdFullname,bdBirth,bdWigth,bdAdrs,bdLdd,bdPhn;
-    CheckBox bdG1,bdG2;
+    EditText bdFullname,bdBirth,bdWigth,bdGrp,bdAdrs,bdLdd,bdPhn;
+    CheckBox bdGm;
     Button rgs;
+    long  id=0;
 
-    FirebaseDatabase rootnode;
-    DatabaseReference reference;
+    DatabaseReference reff;
+    MemberbdReg member;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registerbd);
 
-        bdFullname = findViewById(R.id.nameT);
-        bdBirth = findViewById(R.id.BdayT);
-        bdG1 = findViewById(R.id.GndM);
-        bdG2 = findViewById(R.id.GndF);
-        bdWigth = findViewById(R.id.WigtT);
-        bdAdrs = findViewById(R.id.addrsT);
-        bdLdd = findViewById(R.id.LddT);
-        bdPhn = findViewById(R.id.PhnT);
-        rgs=findViewById(R.id.rg);
+        bdFullname = (EditText)findViewById(R.id.nameT);
+        bdBirth = (EditText)findViewById(R.id.BdayTt);
+        bdGm =(CheckBox)findViewById(R.id.Gnd);
+//        bdGf =(CheckBox)findViewById(R.id.Gndf);
+        bdWigth = (EditText)findViewById(R.id.weightTt);
+        bdGrp = (EditText)findViewById(R.id.bgrTt);
+        bdAdrs = (EditText)findViewById(R.id.ads);
+        bdLdd = (EditText)findViewById(R.id.LddTt);
+        bdPhn = (EditText)findViewById(R.id.PhnTt);
+        rgs=(Button) findViewById(R.id.rg);
 
+        member= new MemberbdReg();
 
+        reff = FirebaseDatabase.getInstance().getReference().child("BloodDonation");
 
-
-        rgs.setOnClickListener(new View.OnClickListener() {
+        reff.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                    String name = bdFullname.getText().toString().trim();
-                    String Bday = bdBirth.getText().toString().trim();
-                    String weight = bdWigth.getText().toString().trim();
-                    String adress = bdAdrs.getText().toString().trim();
-                    String ldd = bdLdd.getText().toString().trim();
-                    String phone = bdPhn.getText().toString().trim();
+            public void onDataChange(@NonNull DataSnapshot DataSnapshot) {
+                id=( DataSnapshot.getChildrenCount());
+            }
 
-                rootnode=FirebaseDatabase.getInstance();
-            reference=rootnode.getReference("Register");
-
-//                bdHelperDB helperClass=new bdHelperDB(name,Bday,weight,adress,ldd,phone);
-//            reference.child(phone).setValue(helperClass);
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
 
 
-
-            rgs=findViewById(R.id.rg);
         rgs.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
+                   //String name = bdFullname.getText().toString().trim();
+                    int Bday = Integer.parseInt (bdBirth.getText().toString().trim());
+                    String gender =  bdGm.getText().toString().trim();
+                    int weight = Integer.parseInt(bdWigth.getText().toString().trim());
+                    String bloodgruop = bdGrp.getText().toString().trim();
+                    String adress = bdAdrs.getText().toString().trim();
+                    int ldd = Integer.parseInt(bdLdd.getText().toString().trim());
+                    int phone = Integer.parseInt(bdPhn.getText().toString().trim());
+
+                member.setName(bdFullname.getText().toString().trim());
+                member.setBirthDay(Bday);
+                member.setGender(gender);
+                member.setWigth(weight);
+                member.setBloodgruop(bloodgruop);
+                member.setAdress(adress);
+                member.setLadtDonatedate(ldd);
+                member.setPhone(phone);
+
+                reff.push().setValue(member);
+
+                reff.child(String.valueOf(id+1)).setValue(member);
+
+                Toast.makeText(Registerbd.this,"data inserted",Toast.LENGTH_LONG).show();
+
+
                 Intent tskend = new Intent(Registerbd.this, hospitalsbd.class);
                 startActivity(tskend);
 
-
             }
         });
+
     }
 }

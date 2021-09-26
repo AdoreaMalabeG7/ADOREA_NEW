@@ -26,7 +26,7 @@
         android:gravity="center_horizontal" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/namerq"
         android:layout_width="343dp"
         android:layout_height="70dp"
         android:ems="10"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.347" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/nd"
         android:layout_width="331dp"
         android:layout_height="62dp"
         android:ems="10"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.446" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/cnum"
         android:layout_width="339dp"
         android:layout_height="80dp"
         android:ems="10"
@@ -74,10 +74,10 @@
         app:layout_constraintVertical_bias="0.554" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/conf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="Confirm"
         android:textSize="20sp"
         app:backgroundTint="#5d5d5a"
         app:layout_constraintBottom_toBottomOf="parent"

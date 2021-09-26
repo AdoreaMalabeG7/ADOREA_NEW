@@ -6,11 +6,13 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Helping hands"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HELPING_HANDS">
+<<<<<<< Updated upstream
         <activity android:name=".Dhana"></activity>
         <activity android:name=".registeredHomes" />
         <activity android:name=".Activity_establishment" />
@@ -25,11 +27,16 @@
         </activity>
         <activity android:name=".HomeRegistration" />
         <activity android:name=".mealType" />
+=======
+        <activity
+            android:name=".UsersList"
+            android:exported="true" />
+>>>>>>> Stashed changes
         <activity
             android:name=".Home"
             android:exported="true" />
         <activity
-            android:name=".Users"
+            android:name=".MyAdapter"
             android:exported="true" />
         <activity
             android:name=".SignUp"
@@ -71,7 +78,18 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+<<<<<<< Updated upstream
             android:label="Helping hands" />
+=======
+            android:label="Helping hands"
+            tools:ignore="ExtraText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> Stashed changes
     </application>
 
 </manifest>

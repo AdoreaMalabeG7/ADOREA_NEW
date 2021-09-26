@@ -11,6 +11,7 @@ public class Activity_establishment extends AppCompatActivity {
     private Button button10;
     private Button button11;
     private Button button12;
+    private Button button14;
 
 
     @Override
@@ -40,6 +41,13 @@ public class Activity_establishment extends AppCompatActivity {
                 openRegistered();
             }
         });
+        button14 = (Button) findViewById(R.id.button14);
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDhana();
+            }
+        });
     }
 
 
@@ -56,5 +64,10 @@ public class Activity_establishment extends AppCompatActivity {
     public void openRegistered(){
         Intent intent2 = new Intent(this, registeredHomes.class);
         startActivity(intent2);
+    }
+
+    public void  openDhana(){
+        Intent intent3 = new Intent(this, Dhana.class);
+        startActivity(intent3);
     }
 }

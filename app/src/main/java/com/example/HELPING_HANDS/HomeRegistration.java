@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
+
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -19,8 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HomeRegistration extends AppCompatActivity {
-    EditText place, address, phone, mCount, fCount;
-    Spinner spinner = (Spinner) findViewById(R.id.spinner);
+    EditText place, address,type, phone, mCount, fCount;
     Button submit;
 
     @Override
@@ -28,11 +26,12 @@ public class HomeRegistration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_registration);
 
-        place = (EditText)findViewById(R.id.add_place);
-        address = (EditText)findViewById(R.id.add_address);
-        phone = (EditText)findViewById(R.id.add_phone);
-        mCount = (EditText)findViewById(R.id.add_mCount);
-        fCount = (EditText)findViewById(R.id.add_fCount);
+        place=(EditText)findViewById(R.id.add_place);
+        address=(EditText)findViewById(R.id.add_address);
+        phone=(EditText)findViewById(R.id.add_phone);
+        mCount=(EditText)findViewById(R.id.add_mCount);
+        fCount=(EditText)findViewById(R.id.add_fCount);
+        type=(EditText) findViewById(R.id.add_type);
 
         submit = (Button) findViewById(R.id.add_submit);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -42,11 +41,7 @@ public class HomeRegistration extends AppCompatActivity {
             }
         });
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<>(HomeRegistration.this,
-                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.homeType));
-        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mySpinner.setAdapter(myAdapter);
+
     }
 
     private void processinsert() {
@@ -54,7 +49,7 @@ public class HomeRegistration extends AppCompatActivity {
         map.put("place",place.getText().toString());
         map.put("address",address.getText().toString());
         map.put("phone",phone.getText().toString());
-        map.put("spinner", spinner.getPrompt().toString());
+        map.put("type",type .getText().toString());
         map.put("mCount",mCount.getText().toString());
         map.put("fCount",fCount.getText().toString());
         FirebaseDatabase.getInstance().getReference().child("care_home").push()
@@ -67,6 +62,7 @@ public class HomeRegistration extends AppCompatActivity {
                         phone.setText("");
                         mCount.setText("");
                         fCount.setText("");
+                        type.setText("");
                         Toast.makeText(getApplicationContext(), "Inserted Successfully",Toast.LENGTH_LONG).show();
 
                     }

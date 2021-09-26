@@ -11,13 +11,12 @@
         android:id="@+id/imageView6"
         android:layout_width="1076dp"
         android:layout_height="1065dp"
-        android:layout_marginBottom="600dp"
+        android:layout_marginBottom="700dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.493"
-        app:srcCompat="@drawable/circle" />
+        app:srcCompat="@mipmap/circle" />
 
     <TextView
         android:id="@+id/textView2"
@@ -31,6 +30,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/add_place"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,6 +70,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/add_address"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_place" />
 
@@ -93,7 +94,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -127,6 +128,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/add_phone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_address" />
 
@@ -138,33 +140,16 @@
         android:text="Care Home Type"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintBottom_toTopOf="@+id/add_type"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_phone" />
 
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="337dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/textView32"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Enter Male Count"
         android:textColor="#FFFFFF"
@@ -172,7 +157,7 @@
         app:layout_constraintBottom_toTopOf="@+id/add_mCount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/add_type" />
 
     <EditText
         android:id="@+id/add_mCount"
@@ -193,6 +178,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView33"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -200,8 +186,8 @@
         android:id="@+id/add_submit"
         android:layout_width="129dp"
         android:layout_height="46dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="100dp"
         android:background="#AD07CC"
         android:gravity="center"
         android:text="Submit"
@@ -210,9 +196,9 @@
         app:backgroundTint="#AD07CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/add_fCount" />
 
     <TextView
         android:id="@+id/textView33"
@@ -228,6 +214,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_mCount" />
 
+
     <EditText
         android:id="@+id/add_fCount"
         android:layout_width="336dp"
@@ -236,7 +223,7 @@
         android:layout_marginLeft="52dp"
         android:layout_marginEnd="149dp"
         android:layout_marginRight="149dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Enter Female Count"
@@ -251,22 +238,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="12dp"
-        android:shadowColor="#221E1E"
-        android:text="Home Registration Form"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+    <EditText
+        android:id="@+id/add_type"
+        android:layout_width="334dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Care Home Type"
+        android:inputType="textPersonName"
+        android:textColorHighlight="#C5C5C5"
+        android:textColorHint="#C5C5C5"
+        app:layout_constraintBottom_toTopOf="@+id/textView32"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.701"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

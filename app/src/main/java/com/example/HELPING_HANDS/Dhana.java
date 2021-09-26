@@ -9,13 +9,17 @@ import android.os.Bundle;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class registeredHomes extends AppCompatActivity {
+public class Dhana extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registered_homes);
+        setContentView(R.layout.activity_dhana);
+
+
 
     }
+
+
 }

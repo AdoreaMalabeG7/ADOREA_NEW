@@ -11,65 +11,53 @@
         android:id="@+id/imageView8"
         android:layout_width="464dp"
         android:layout_height="698dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
-        app:srcCompat="@drawable/photo1" />
+        app:layout_constraintTop_toBottomOf="@+id/add_meal"
+        app:srcCompat="@mipmap/photo1" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="778dp"
         android:layout_height="948dp"
-        android:layout_marginBottom="650dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423"
-        app:srcCompat="@drawable/circle" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="290dp"
-        android:text="Reserve"
-        android:textColor="#B21CCC"
-        app:backgroundTint="#F6F6F6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/circle" />
 
     <TextView
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="64dp"
         android:text="User Name"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName13"
+        app:layout_constraintBottom_toTopOf="@+id/add_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName13"
+        android:id="@+id/add_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Enter User Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#c5c5c5"
         app:layout_constraintBottom_toTopOf="@+id/textView38"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
@@ -78,24 +66,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:text="Date"
         android:textColor="#F6F6F6"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        app:layout_constraintBottom_toTopOf="@+id/add_date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13" />
+        app:layout_constraintTop_toBottomOf="@+id/add_name" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/add_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Enter Date"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintBottom_toTopOf="@+id/textView40"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
@@ -104,24 +94,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:text="Home Name"
         android:textColor="#F8F7F7"
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintBottom_toTopOf="@+id/add_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="211dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView40"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+        app:layout_constraintTop_toBottomOf="@+id/add_meal" />
 
     <TextView
         android:id="@+id/textView40"
@@ -130,22 +109,55 @@
         android:layout_marginTop="10dp"
         android:text="Meal Type"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintBottom_toTopOf="@+id/add_meal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+        app:layout_constraintTop_toBottomOf="@+id/add_date" />
 
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="208dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/button15"
+    <Button
+        android:id="@+id/reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="220dp"
+        android:text="Reserve"
+        android:textColor="#B21CCC"
+        app:backgroundTint="#F6F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_home" />
+
+    <EditText
+        android:id="@+id/add_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter Home Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintBottom_toTopOf="@+id/reserve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <EditText
+        android:id="@+id/add_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Enter Meal Type"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#c5c5c5"
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

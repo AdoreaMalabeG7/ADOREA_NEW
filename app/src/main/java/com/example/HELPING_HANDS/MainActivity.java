@@ -20,9 +20,15 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openLogin();
+                openUserList();
+                //openLogin();
             }
         });
+    }
+
+    public void openUserList(){
+        Intent intent = new Intent(this, UsersList.class);
+        startActivity(intent);
     }
 
     public void openLogin(){

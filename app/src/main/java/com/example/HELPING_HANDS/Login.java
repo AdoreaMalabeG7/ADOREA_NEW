@@ -17,6 +17,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
     private Button signup;
@@ -31,7 +37,7 @@ public class Login extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
         Eemail = findViewById(R.id.email);
-        Epwd = findViewById(R.id.ads);
+        Epwd = findViewById(R.id.pwd);
         signup = findViewById(R.id.button3);
         login = findViewById(R.id.button2);
 

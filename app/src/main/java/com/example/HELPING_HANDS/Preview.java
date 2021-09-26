@@ -18,8 +18,6 @@ import com.google.firebase.database.ValueEventListener;
 
 
 public class Preview extends AppCompatActivity {
-
-
     TextView tname, temail, tpnum, tuname, tpwd;
     Button btnEdit, btnDelete;
     DatabaseReference ref;
@@ -33,13 +31,13 @@ public class Preview extends AppCompatActivity {
         btnEdit = (Button) findViewById(R.id.button5);
         btnDelete = (Button) findViewById(R.id.button6);
 
-        tname = (TextView)findViewById(R.id.nm);
-        temail = (TextView)findViewById(R.id.mail);
-        tpnum = (TextView)findViewById(R.id.pon);
-        tuname = (TextView)findViewById(R.id.unm);
-        tpwd = (TextView)findViewById(R.id.pw);
+        tname = (TextView)findViewById(R.id.textView3);
+        temail = (TextView)findViewById(R.id.textView4);
+        tpnum = (TextView)findViewById(R.id.addrs);
+        tuname = (TextView)findViewById(R.id.LDD);
+        tpwd = (TextView)findViewById(R.id.textView34);
 
-        ref = FirebaseDatabase.getInstance().getReference().child("UserDtl").child("U9");
+        ref = FirebaseDatabase.getInstance().getReference().child("UserDtl").child("U5");
 
         ref.addValueEventListener(new ValueEventListener() {
 
@@ -71,10 +69,22 @@ public class Preview extends AppCompatActivity {
             }
         });
 
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                deleteUser();
+            }
+        });
     }
 
     public void openEditDetails(){
         Intent intent = new Intent(this, EditDetails.class);
         startActivity(intent);
+    }
+
+    public void deleteUser(){
+        ref = FirebaseDatabase.getInstance().getReference("UserDtl").child("U5");
+        ref.removeValue();
+        Toast.makeText(this, "Details Deleted Successfully", Toast.LENGTH_LONG).show();
     }
 }
